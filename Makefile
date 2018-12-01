@@ -4,7 +4,7 @@ MANIFEST=./manifest
 all: deploy
 
 deploy: export OP=create
-deploy: cp sed
+deploy: 
 	@kubectl ${OP} -f ${MANIFEST}/.
 
 clean: export OP=delete
